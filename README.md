@@ -2,6 +2,10 @@
 
 RR4 UI Toolkit is a static frontend showcase and cookbook inspired by the visual language of Ridge Racer Type 4. It demonstrates a Bootstrap-based component set with RR4-styled typography, panels, dialogs, menus, meters, data tables, placeholders, and lightweight Anime.js motion.
 
+## Demo
+
+[View the live demo](https://badleo.github.io/rr4-bootstrap-toolkit/)
+
 ## Features
 
 - Static, dependency-light site with no build step required
