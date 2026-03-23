@@ -1,0 +1,691 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RR4 Frontend Toolkit Cookbook</title>
+    <meta
+      name="description"
+      content="Live component demos and sample code for the RR4-inspired Bootstrap frontend toolkit."
+    >
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Mono:wght@400;500&family=Oswald:wght@300;400;500;600&family=Share+Tech+Mono&display=swap"
+      rel="stylesheet"
+    >
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    >
+    <link href="./assets/toolkit.css" rel="stylesheet">
+  </head>
+  <body class="rr4-shell">
+    <header class="rr4-topbar">
+      <nav class="navbar navbar-expand-lg py-3">
+        <div class="container">
+          <a class="rr4-brand" href="./index.html">
+            <span class="rr4-brand-mark">RR4</span>
+            <span>Frontend Toolkit</span>
+          </a>
+          <div class="navbar-nav ms-auto flex-row gap-3">
+            <a class="rr4-nav-link" href="./index.html">Showcase</a>
+            <a class="rr4-nav-link" href="#recipes" data-rr4-scroll>Recipes</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="py-5">
+      <div class="rr4-bg-img" aria-hidden="true">
+        <img src="./assets/images/showcase-car-select.png" alt="">
+      </div>
+      <div class="container pt-4 pt-lg-5">
+        <div class="row g-4 align-items-end mb-5">
+          <div class="col-lg-8">
+            <div class="rr4-kicker mb-2" data-rr4-animate>*Mode: Cookbook</div>
+            <h1 class="rr4-headline mb-3" data-rr4-animate>Toolkit Recipes</h1>
+            <p class="rr4-subheadline mb-0" data-rr4-animate>
+              Each block below includes a live component demo and the matching HTML so the toolkit can be dropped into any Bootstrap page quickly.
+            </p>
+          </div>
+          <div class="col-lg-4">
+            <div class="rr4-card p-4" data-rr4-animate>
+              <div class="rr4-section-label text-warning mb-2">*Included</div>
+              <div class="rr4-hud-row">
+                <a class="rr4-chip" href="#recipe-buttons" data-rr4-scroll>Buttons</a>
+                <a class="rr4-chip is-dark" href="#recipe-grid" data-rr4-scroll>Grid</a>
+                <a class="rr4-chip is-dark" href="#recipe-colors" data-rr4-scroll>Colors</a>
+                <a class="rr4-chip is-dark" href="#recipe-placeholders" data-rr4-scroll>Placeholders</a>
+                <a class="rr4-chip is-dark" href="#recipe-meters" data-rr4-scroll>Meters</a>
+                <a class="rr4-chip is-dark" href="#recipe-accordion" data-rr4-scroll>Accordion</a>
+                <a class="rr4-chip is-dark" href="#recipe-menus" data-rr4-scroll>Menus</a>
+                <a class="rr4-chip is-dark" href="#recipe-dialogs" data-rr4-scroll>Dialogs</a>
+                <a class="rr4-chip is-dark" href="#recipe-forms" data-rr4-scroll>Forms</a>
+                <a class="rr4-chip is-dark" href="#recipe-data" data-rr4-scroll>Data</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <section id="recipes" class="d-grid gap-5">
+          <article id="recipe-buttons">
+            <div class="d-flex justify-content-between align-items-end flex-wrap gap-3 mb-3">
+              <div>
+                <div class="rr4-kicker" data-rr4-animate>*Recipe 01</div>
+                <h2 class="h1 text-uppercase mb-0" data-rr4-animate>Command Buttons</h2>
+              </div>
+            </div>
+            <div class="row g-4">
+              <div class="col-lg-6">
+                <div class="rr4-demo h-100" data-rr4-animate>
+                  <div class="rr4-cta-row">
+                    <a class="rr4-btn is-primary" href="#">
+                      <span>Start Event</span>
+                      <span class="rr4-meta">Primary</span>
+                    </a>
+                    <a class="rr4-btn" href="#">
+                      <span>Inspect Garage</span>
+                      <span class="rr4-meta">Secondary</span>
+                    </a>
+                    <span class="rr4-chip">HUD Chip</span>
+                    <span class="rr4-chip is-dark">Muted Chip</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="rr4-code h-100" data-rr4-animate>
+<pre><code>&lt;div class="rr4-cta-row"&gt;
+  &lt;a class="rr4-btn is-primary" href="#"&gt;
+    &lt;span&gt;Start Event&lt;/span&gt;
+    &lt;span class="rr4-meta"&gt;Primary&lt;/span&gt;
+  &lt;/a&gt;
+  &lt;a class="rr4-btn" href="#"&gt;
+    &lt;span&gt;Inspect Garage&lt;/span&gt;
+    &lt;span class="rr4-meta"&gt;Secondary&lt;/span&gt;
+  &lt;/a&gt;
+  &lt;span class="rr4-chip"&gt;HUD Chip&lt;/span&gt;
+  &lt;span class="rr4-chip is-dark"&gt;Muted Chip&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article id="recipe-grid">
+            <div class="rr4-kicker mb-1" data-rr4-animate>*Recipe 02</div>
+            <h2 class="h1 text-uppercase mb-3" data-rr4-animate>Bootstrap Grid</h2>
+            <div class="row g-4">
+              <div class="col-lg-6">
+                <div class="rr4-demo h-100" data-rr4-animate>
+                  <div class="container-fluid px-0">
+                    <div class="row g-3">
+                      <div class="col-md-4">
+                        <div class="rr4-stat h-100">
+                          <span class="rr4-hud-caption text-warning">Col Md 4</span>
+                          <strong>04</strong>
+                          <div class="rr4-meta">left rail</div>
+                        </div>
+                      </div>
+                      <div class="col-md-8">
+                        <div class="rr4-browser h-100">
+                          <div class="rr4-browser-bar">
+                            <span class="rr4-section-label">Grid Screen</span>
+                            <span class="rr4-meta">col-md-8</span>
+                          </div>
+                          <div class="rr4-browser-screen">
+                            <div class="row g-3">
+                              <div class="col-sm-6">
+                                <div class="rr4-card p-3 h-100">
+                                  <div class="rr4-panel-title mb-3">Col Sm 6</div>
+                                  <div class="rr4-meta">Stacks on narrow screens, splits on small and up.</div>
+                                </div>
+                              </div>
+                              <div class="col-sm-6">
+                                <div class="rr4-card p-3 h-100">
+                                  <div class="rr4-panel-title mb-3">Col Sm 6</div>
+                                  <div class="rr4-meta">Use Bootstrap grid, then apply RR4 components inside it.</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="rr4-code h-100" data-rr4-animate>
+<pre><code>&lt;div class="container"&gt;
+  &lt;div class="row g-3"&gt;
+    &lt;div class="col-md-4"&gt;
+      &lt;div class="rr4-stat"&gt;...&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="col-md-8"&gt;
+      &lt;div class="rr4-browser"&gt;
+        &lt;div class="rr4-browser-screen"&gt;
+          &lt;div class="row g-3"&gt;
+            &lt;div class="col-sm-6"&gt;
+              &lt;div class="rr4-card"&gt;...&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="col-sm-6"&gt;
+              &lt;div class="rr4-card"&gt;...&lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article id="recipe-colors">
+            <div class="rr4-kicker mb-1" data-rr4-animate>*Recipe 03</div>
+            <h2 class="h1 text-uppercase mb-3" data-rr4-animate>Color Utilities</h2>
+            <div class="row g-4">
+              <div class="col-lg-6">
+                <div class="rr4-demo h-100" data-rr4-animate>
+                  <div class="rr4-swatch-grid">
+                    <div class="rr4-swatch"><code>.text-primary</code><span class="text-primary">RR4 Primary</span></div>
+                    <div class="rr4-swatch"><code>.text-primary-emphasis</code><span class="text-primary-emphasis">Primary Emphasis</span></div>
+                    <div class="rr4-swatch"><code>.text-secondary</code><span class="text-secondary">Secondary</span></div>
+                    <div class="rr4-swatch"><code>.text-secondary-emphasis</code><span class="text-secondary-emphasis">Secondary Emphasis</span></div>
+                    <div class="rr4-swatch"><code>.text-success</code><span class="text-success">Success</span></div>
+                    <div class="rr4-swatch"><code>.text-success-emphasis</code><span class="text-success-emphasis">Success Emphasis</span></div>
+                    <div class="rr4-swatch"><code>.text-danger</code><span class="text-danger">Danger</span></div>
+                    <div class="rr4-swatch"><code>.text-danger-emphasis</code><span class="text-danger-emphasis">Danger Emphasis</span></div>
+                    <div class="rr4-swatch"><code>.text-warning</code><span class="text-warning">Warning</span></div>
+                    <div class="rr4-swatch"><code>.text-warning-emphasis</code><span class="text-warning-emphasis">Warning Emphasis</span></div>
+                    <div class="rr4-swatch"><code>.text-info</code><span class="text-info">Info</span></div>
+                    <div class="rr4-swatch"><code>.text-info-emphasis</code><span class="text-info-emphasis">Info Emphasis</span></div>
+                    <div class="rr4-swatch"><code>.text-light</code><span class="text-light">Light</span></div>
+                    <div class="rr4-swatch"><code>.text-light-emphasis</code><span class="text-light-emphasis">Light Emphasis</span></div>
+                    <div class="rr4-swatch"><code>.text-dark</code><span class="text-dark">Dark</span></div>
+                    <div class="rr4-swatch"><code>.text-dark-emphasis</code><span class="text-dark-emphasis">Dark Emphasis</span></div>
+                    <div class="rr4-swatch"><code>.text-body</code><span class="text-body">Body</span></div>
+                    <div class="rr4-swatch"><code>.text-body-emphasis</code><span class="text-body-emphasis">Body Emphasis</span></div>
+                    <div class="rr4-swatch"><code>.text-body-secondary</code><span class="text-body-secondary">Body Secondary</span></div>
+                    <div class="rr4-swatch"><code>.text-body-tertiary</code><span class="text-body-tertiary">Body Tertiary</span></div>
+                    <div class="rr4-swatch"><code>.text-black</code><span class="text-black bg-light px-2 py-1 d-inline-block">Black</span></div>
+                    <div class="rr4-swatch"><code>.text-white</code><span class="text-white">White</span></div>
+                    <div class="rr4-swatch"><code>.text-black-50</code><span class="text-black-50 bg-light px-2 py-1 d-inline-block">Black 50</span></div>
+                    <div class="rr4-swatch"><code>.text-white-50</code><span class="text-white-50">White 50</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="rr4-code h-100" data-rr4-animate>
+<pre><code>&lt;p class="text-primary"&gt;RR4 Primary&lt;/p&gt;
+&lt;p class="text-secondary"&gt;Secondary&lt;/p&gt;
+&lt;p class="text-success"&gt;Success&lt;/p&gt;
+&lt;p class="text-danger"&gt;Danger&lt;/p&gt;
+&lt;p class="text-warning"&gt;Warning&lt;/p&gt;
+&lt;p class="text-info"&gt;Info&lt;/p&gt;
+&lt;p class="text-body-emphasis"&gt;Body Emphasis&lt;/p&gt;
+&lt;p class="text-white-50"&gt;White 50&lt;/p&gt;</code></pre>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article id="recipe-meters">
+            <div class="rr4-kicker mb-1" data-rr4-animate>*Recipe 04</div>
+            <h2 class="h1 text-uppercase mb-3" data-rr4-animate>Dashboard Meter</h2>
+            <div class="row g-4">
+              <div class="col-lg-6">
+                <div class="rr4-demo h-100" data-rr4-animate>
+                  <div class="rr4-card p-4 h-100 d-grid gap-4">
+                    <div class="rr4-meter" style="--rr4-meter-value: 68%;">
+                      <div class="rr4-meter-head">
+                        <span class="rr4-meter-label">Turbo Load</span>
+                        <span class="rr4-meter-value">68%</span>
+                      </div>
+                      <div class="rr4-meter-track">
+                        <div class="rr4-meter-fill"></div>
+                        <div class="rr4-meter-ticks"></div>
+                      </div>
+                      <div class="rr4-meter-scale">
+                        <span>0</span>
+                        <span>25</span>
+                        <span>50</span>
+                        <span>75</span>
+                        <span>100</span>
+                      </div>
+                    </div>
+
+                    <div class="rr4-meter" style="--rr4-meter-value: 92%;">
+                      <div class="rr4-meter-head">
+                        <span class="rr4-meter-label">Engine Stress</span>
+                        <span class="rr4-meter-value">92%</span>
+                      </div>
+                      <div class="rr4-meter-track">
+                        <div class="rr4-meter-fill is-danger"></div>
+                        <div class="rr4-meter-ticks"></div>
+                      </div>
+                      <div class="rr4-meter-scale">
+                        <span>idle</span>
+                        <span>mid</span>
+                        <span>high</span>
+                        <span>max</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="rr4-code h-100" data-rr4-animate>
+<pre><code>&lt;div class="rr4-meter" style="--rr4-meter-value: 68%;"&gt;
+  &lt;div class="rr4-meter-head"&gt;
+    &lt;span class="rr4-meter-label"&gt;Turbo Load&lt;/span&gt;
+    &lt;span class="rr4-meter-value"&gt;68%&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class="rr4-meter-track"&gt;
+    &lt;div class="rr4-meter-fill"&gt;&lt;/div&gt;
+    &lt;div class="rr4-meter-ticks"&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="rr4-meter-scale"&gt;
+    &lt;span&gt;0&lt;/span&gt;
+    &lt;span&gt;25&lt;/span&gt;
+    &lt;span&gt;50&lt;/span&gt;
+    &lt;span&gt;75&lt;/span&gt;
+    &lt;span&gt;100&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article id="recipe-placeholders">
+            <div class="rr4-kicker mb-1" data-rr4-animate>*Recipe 05</div>
+            <h2 class="h1 text-uppercase mb-3" data-rr4-animate>Placeholders</h2>
+            <div class="row g-4">
+              <div class="col-lg-6">
+                <div class="rr4-demo h-100" data-rr4-animate>
+                  <div class="card rr4-placeholder-card" aria-hidden="true">
+                    <img src="./assets/images/showcase-car-select.png" class="card-img-top" alt="Loading preview">
+                    <div class="card-body">
+                      <h5 class="card-title placeholder-glow mb-3">
+                        <span class="placeholder col-7 bg-warning"></span>
+                      </h5>
+                      <p class="card-text placeholder-wave mb-4">
+                        <span class="placeholder col-10 bg-light"></span>
+                        <span class="placeholder col-8 bg-light"></span>
+                        <span class="placeholder col-9 bg-light"></span>
+                        <span class="placeholder col-6 bg-secondary"></span>
+                      </p>
+                      <a class="rr4-btn is-primary disabled placeholder col-6" aria-disabled="true"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="rr4-code h-100" data-rr4-animate>
+<pre><code>&lt;div class="card rr4-placeholder-card" aria-hidden="true"&gt;
+  &lt;img src="./assets/images/showcase-car-select.png" class="card-img-top" alt=""&gt;
+  &lt;div class="card-body"&gt;
+    &lt;h5 class="card-title placeholder-glow"&gt;
+      &lt;span class="placeholder col-7 bg-warning"&gt;&lt;/span&gt;
+    &lt;/h5&gt;
+    &lt;p class="card-text placeholder-wave"&gt;
+      &lt;span class="placeholder col-10 bg-light"&gt;&lt;/span&gt;
+      &lt;span class="placeholder col-8 bg-light"&gt;&lt;/span&gt;
+      &lt;span class="placeholder col-6 bg-secondary"&gt;&lt;/span&gt;
+    &lt;/p&gt;
+    &lt;a class="rr4-btn is-primary disabled placeholder col-6" aria-disabled="true"&gt;&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article id="recipe-accordion">
+            <div class="rr4-kicker mb-1" data-rr4-animate>*Recipe 06</div>
+            <h2 class="h1 text-uppercase mb-3" data-rr4-animate>Accordion</h2>
+            <div class="row g-4">
+              <div class="col-lg-6">
+                <div class="rr4-demo h-100" data-rr4-animate>
+                  <div class="accordion rr4-accordion" id="rr4AccordionDemo">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#rr4-acc-1" aria-expanded="true" aria-controls="rr4-acc-1">
+                          Garage Status
+                        </button>
+                      </h2>
+                      <div id="rr4-acc-1" class="accordion-collapse collapse show" data-bs-parent="#rr4AccordionDemo">
+                        <div class="accordion-body">
+                          <div class="rr4-accordion-meta mb-2">Current Loadout</div>
+                          Engine tuned for grip with short ratio gearing and reinforced cooling for extended runs.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#rr4-acc-2" aria-expanded="false" aria-controls="rr4-acc-2">
+                          Telemetry Feed
+                        </button>
+                      </h2>
+                      <div id="rr4-acc-2" class="accordion-collapse collapse" data-bs-parent="#rr4AccordionDemo">
+                        <div class="accordion-body">
+                          <div class="rr4-accordion-meta mb-2">Stage 02</div>
+                          Average corner speed is stable. Brake balance trends slightly forward under repeated stress.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#rr4-acc-3" aria-expanded="false" aria-controls="rr4-acc-3">
+                          Team Notes
+                        </button>
+                      </h2>
+                      <div id="rr4-acc-3" class="accordion-collapse collapse" data-bs-parent="#rr4AccordionDemo">
+                        <div class="accordion-body">
+                          <div class="rr4-accordion-meta mb-2">Briefing</div>
+                          Favor clean acceleration exits. Surface is fast but inconsistent at the final sector entry.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="rr4-code h-100" data-rr4-animate>
+<pre><code>&lt;div class="accordion rr4-accordion" id="rr4AccordionDemo"&gt;
+  &lt;div class="accordion-item"&gt;
+    &lt;h2 class="accordion-header"&gt;
+      &lt;button class="accordion-button" type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#rr4-acc-1"
+        aria-expanded="true"&gt;
+        Garage Status
+      &lt;/button&gt;
+    &lt;/h2&gt;
+    &lt;div id="rr4-acc-1" class="accordion-collapse collapse show"&gt;
+      &lt;div class="accordion-body"&gt;...&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article id="recipe-menus">
+            <div class="rr4-kicker mb-1" data-rr4-animate>*Recipe 07</div>
+            <h2 class="h1 text-uppercase mb-3" data-rr4-animate>Menu Stack</h2>
+            <div class="row g-4">
+              <div class="col-lg-6">
+                <div class="rr4-demo h-100" data-rr4-animate>
+                  <aside class="rr4-sidebar">
+                    <span class="rr4-panel-title mb-3">Commands</span>
+                    <div class="rr4-menu">
+                      <a class="rr4-menu-item is-current" href="#">
+                        <span>Grand Prix</span>
+                        <span class="marker"></span>
+                      </a>
+                      <a class="rr4-menu-item" href="#">
+                        <span>Time Attack</span>
+                        <span class="marker"></span>
+                      </a>
+                      <a class="rr4-menu-item" href="#">
+                        <span>Records</span>
+                        <span class="marker"></span>
+                      </a>
+                      <a class="rr4-menu-item" href="#">
+                        <span>Options</span>
+                        <span class="marker"></span>
+                      </a>
+                    </div>
+                  </aside>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="rr4-code h-100" data-rr4-animate>
+<pre><code>&lt;aside class="rr4-sidebar"&gt;
+  &lt;span class="rr4-panel-title mb-3"&gt;Commands&lt;/span&gt;
+  &lt;div class="rr4-menu"&gt;
+    &lt;a class="rr4-menu-item is-current" href="#"&gt;
+      &lt;span&gt;Grand Prix&lt;/span&gt;
+      &lt;span class="marker"&gt;&lt;/span&gt;
+    &lt;/a&gt;
+    &lt;a class="rr4-menu-item" href="#"&gt;...&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/aside&gt;</code></pre>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article id="recipe-dialogs">
+            <div class="rr4-kicker mb-1" data-rr4-animate>*Recipe 08</div>
+            <h2 class="h1 text-uppercase mb-3" data-rr4-animate>Dialog Screen</h2>
+            <div class="row g-4">
+              <div class="col-lg-6">
+                <div class="rr4-demo h-100" data-rr4-animate>
+                  <div class="rr4-dialog">
+                    <div class="rr4-section-label text-warning mb-2">*Mode: Comment</div>
+                    <div class="row g-3 align-items-center">
+                      <div class="col-md-4">
+                        <div class="rr4-portrait mx-auto">
+                          <img src="./assets/images/dialog-portrait.png" alt="Dialog portrait reference">
+                        </div>
+                      </div>
+                      <div class="col-md-8">
+                        <span class="rr4-panel-title mb-3">Message</span>
+                        <div class="rr4-message-box rr4-message-box-more">
+                          Bonjour. This panel works for guides, welcome steps, or mission callouts.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="rr4-code h-100" data-rr4-animate>
+<pre><code>&lt;div class="rr4-dialog"&gt;
+  &lt;div class="rr4-section-label text-warning mb-2"&gt;*Mode: Comment&lt;/div&gt;
+  &lt;div class="row g-3 align-items-center"&gt;
+    &lt;div class="col-md-4"&gt;
+      &lt;div class="rr4-portrait"&gt;
+        &lt;img src="./assets/images/dialog-portrait.png" alt=""&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="col-md-8"&gt;
+      &lt;span class="rr4-panel-title mb-3"&gt;Message&lt;/span&gt;
+      &lt;div class="rr4-message-box rr4-message-box-more"&gt;...&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article id="recipe-stats">
+            <div class="rr4-kicker mb-1" data-rr4-animate>*Recipe 09</div>
+            <h2 class="h1 text-uppercase mb-3" data-rr4-animate>HUD Stats</h2>
+            <div class="row g-4">
+              <div class="col-lg-6">
+                <div class="rr4-demo h-100" data-rr4-animate>
+                  <div class="row g-3">
+                    <div class="col-sm-6">
+                      <div class="rr4-stat h-100">
+                        <span class="rr4-hud-caption text-warning">Top Speed</span>
+                        <strong>119</strong>
+                        <div class="rr4-meta">mph</div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="rr4-stat h-100">
+                        <span class="rr4-hud-caption text-warning">Stage</span>
+                        <strong>02</strong>
+                        <div class="rr4-meta">grip setup</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="rr4-code h-100" data-rr4-animate>
+<pre><code>&lt;div class="rr4-stat"&gt;
+  &lt;span class="rr4-hud-caption text-warning"&gt;Top Speed&lt;/span&gt;
+  &lt;strong&gt;119&lt;/strong&gt;
+  &lt;div class="rr4-meta"&gt;mph&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article id="recipe-forms">
+            <div class="rr4-kicker mb-1" data-rr4-animate>*Recipe 10</div>
+            <h2 class="h1 text-uppercase mb-3" data-rr4-animate>Forms</h2>
+            <div class="row g-4">
+              <div class="col-lg-6">
+                <div class="rr4-demo h-100" data-rr4-animate>
+                  <div class="row g-3">
+                    <div class="col-12">
+                      <label class="rr4-input-label" for="driver">Driver Name</label>
+                      <input class="form-control rr4-form-control" id="driver" type="text" placeholder="Enter pilot ID">
+                    </div>
+                    <div class="col-md-7">
+                      <label class="rr4-input-label" for="team">Team</label>
+                      <select class="form-select rr4-select" id="team">
+                        <option>Team Mappy</option>
+                        <option>Terrazi</option>
+                        <option>DRT</option>
+                      </select>
+                    </div>
+                    <div class="col-md-5 d-flex align-items-end">
+                      <button class="rr4-btn is-primary w-100 border-0" type="button">
+                        <span>Save Setup</span>
+                        <span class="rr4-meta">Commit</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="rr4-code h-100" data-rr4-animate>
+<pre><code>&lt;label class="rr4-input-label" for="driver"&gt;Driver Name&lt;/label&gt;
+&lt;input class="form-control rr4-form-control" id="driver" type="text" placeholder="Enter pilot ID"&gt;
+
+&lt;label class="rr4-input-label" for="team"&gt;Team&lt;/label&gt;
+&lt;select class="form-select rr4-select" id="team"&gt;
+  &lt;option&gt;Team Mappy&lt;/option&gt;
+&lt;/select&gt;</code></pre>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article id="recipe-data">
+            <div class="rr4-kicker mb-1" data-rr4-animate>*Recipe 11</div>
+            <h2 class="h1 text-uppercase mb-3" data-rr4-animate>Data Table</h2>
+            <div class="row g-4">
+              <div class="col-lg-6">
+                <div class="rr4-demo h-100" data-rr4-animate>
+                  <div class="table-responsive">
+                    <table class="table rr4-table">
+                      <thead>
+                        <tr>
+                          <th>Maker</th>
+                          <th>Car</th>
+                          <th>Class</th>
+                          <th>Top Speed</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Terrazi</td>
+                          <td>Wildboar</td>
+                          <td>Grip</td>
+                          <td>119 mph</td>
+                        </tr>
+                        <tr>
+                          <td>Lizard</td>
+                          <td>Assoluto</td>
+                          <td>Balance</td>
+                          <td>126 mph</td>
+                        </tr>
+                        <tr>
+                          <td>Age</td>
+                          <td>Soldat</td>
+                          <td>Power</td>
+                          <td>132 mph</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="rr4-pagination">
+                    <span class="rr4-page is-current">1</span>
+                    <span class="rr4-page">2</span>
+                    <span class="rr4-page">3</span>
+                    <span class="rr4-page">4</span>
+                    <span class="rr4-page">5</span>
+                    <span class="rr4-page">6</span>
+                    <span class="rr4-page">7</span>
+                    <span class="rr4-page">8</span>
+                    <span class="rr4-page">9</span>
+                    <span class="rr4-page">10</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="rr4-code h-100" data-rr4-animate>
+<pre><code>&lt;table class="table rr4-table"&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Maker&lt;/th&gt;
+      &lt;th&gt;Car&lt;/th&gt;
+      &lt;th&gt;Class&lt;/th&gt;
+      &lt;th&gt;Top Speed&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;...&lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;div class="rr4-pagination"&gt;
+  &lt;span class="rr4-page is-current"&gt;1&lt;/span&gt;
+  &lt;span class="rr4-page"&gt;2&lt;/span&gt;
+  &lt;span class="rr4-page"&gt;3&lt;/span&gt;
+  &lt;span class="rr4-page"&gt;4&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+      </div>
+    </main>
+
+    <footer class="rr4-footer">
+      <div class="container">
+        <div class="rr4-divider mb-3"></div>
+        <div class="d-flex flex-wrap justify-content-between gap-3">
+          <span>Cookbook</span>
+          <span>Use `data-rr4-animate` to opt components into the entrance sequence.</span>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js" defer></script>
+    <script src="./assets/toolkit.js" defer></script>
+  </body>
+</html>

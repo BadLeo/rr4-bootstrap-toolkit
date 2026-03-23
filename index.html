@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RR4 Frontend Toolkit Showcase</title>
+    <meta
+      name="description"
+      content="A Bootstrap-based frontend toolkit inspired by Ridge Racer Type 4 interface design, with Anime.js powered motion."
+    >
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Mono:wght@400;500&family=Oswald:wght@300;400;500;600&family=Share+Tech+Mono&display=swap"
+      rel="stylesheet"
+    >
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    >
+    <link href="./assets/toolkit.css" rel="stylesheet">
+  </head>
+  <body class="rr4-shell">
+    <header class="rr4-topbar">
+      <nav class="navbar navbar-expand-lg py-3">
+        <div class="container">
+          <a class="rr4-brand" href="./index.html">
+            <span class="rr4-brand-mark">RR4</span>
+            <span>Frontend Toolkit</span>
+          </a>
+          <button
+            class="navbar-toggler border-0 shadow-none text-light p-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#rr4Nav"
+            aria-controls="rr4Nav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="rr4-chip is-dark">Menu</span>
+          </button>
+          <div class="collapse navbar-collapse" id="rr4Nav">
+            <div class="navbar-nav ms-auto align-items-lg-center gap-lg-3 mt-3 mt-lg-0">
+              <a class="rr4-nav-link" href="#showcase" data-rr4-scroll>Showcase</a>
+              <a class="rr4-nav-link" href="#control-deck" data-rr4-scroll>Deck</a>
+              <a class="rr4-nav-link" href="#systems" data-rr4-scroll>Systems</a>
+              <a class="rr4-nav-link" href="./cookbook.html">Cookbook</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="rr4-bg-img" aria-hidden="true">
+        <img src="./assets/images/showcase-car-select.png" alt="">
+      </div>
+
+      <section class="rr4-hero" id="showcase">
+        <div class="rr4-speedlines"></div>
+        <div class="container position-relative">
+          <div class="row align-items-center g-4 g-xl-5">
+            <div class="col-lg-6">
+              <div class="rr4-kicker mb-3" data-rr4-animate>*Mode: Frontend Toolkit</div>
+              <h1 class="rr4-headline mb-3" data-rr4-animate>Arcade Chrome For Bootstrap Screens</h1>
+              <p class="rr4-subheadline mb-4" data-rr4-animate>
+                The toolkit now covers menus, dialogs, placeholders, meters, accordions, data tables, and pagination. This
+                showcase recomposes those parts into one RR4-styled.
+              </p>
+              <div class="rr4-cta-row mb-4">
+                <a class="rr4-btn is-primary" href="./cookbook.html" data-rr4-animate>
+                  <span>Open Cookbook</span>
+                  <span class="rr4-meta">All Recipes</span>
+                </a>
+                <a class="rr4-btn" href="#systems" data-rr4-scroll data-rr4-animate>
+                  <span>See Systems</span>
+                  <span class="rr4-meta">Live Panels</span>
+                </a>
+              </div>
+              <div class="rr4-counter" data-rr4-animate>
+                <div class="rr4-digit" data-rr4-clock="hh">00</div>
+                <div class="rr4-digit" data-rr4-clock="mm">00</div>
+                <div class="rr4-digit" data-rr4-clock="ss">00</div>
+                <div class="rr4-digit" data-rr4-clock="ms">00</div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="rr4-browser" data-rr4-animate data-rr4-axis="x">
+                <div class="rr4-browser-bar">
+                  <span class="rr4-section-label">*Mode: Car Select</span>
+                  <span class="rr4-meta">Showcase Screen</span>
+                </div>
+                <div class="rr4-browser-screen">
+                  <div class="row g-3">
+                    <div class="col-md-4">
+                      <aside class="rr4-sidebar h-100">
+                        <span class="rr4-panel-title mb-3">Commands</span>
+                        <div class="rr4-menu">
+                          <a class="rr4-menu-item is-current" href="#">
+                            <span>Launch</span>
+                            <span class="marker"></span>
+                          </a>
+                          <a class="rr4-menu-item" href="#">
+                            <span>Garage</span>
+                            <span class="marker"></span>
+                          </a>
+                          <a class="rr4-menu-item" href="#">
+                            <span>Telemetry</span>
+                            <span class="marker"></span>
+                          </a>
+                          <a class="rr4-menu-item" href="#">
+                            <span>Archive</span>
+                            <span class="marker"></span>
+                          </a>
+                        </div>
+                      </aside>
+                    </div>
+                    <div class="col-md-8">
+                      <div class="rr4-media-card rr4-card">
+                        <img src="./assets/images/showcase-car-select.png" alt="Ridge Racer Type 4 car select reference">
+                        <div class="rr4-media-overlay">
+                          <div class="d-flex justify-content-between align-items-start gap-3">
+                            <span class="rr4-panel-title">Prototype</span>
+                            <span class="rr4-chip">Stage 02 / Grip</span>
+                          </div>
+                          <div class="rr4-hud">
+                            <div class="rr4-hud-row">
+                              <span class="rr4-chip is-dark">Bootstrap 5.3</span>
+                              <span class="rr4-chip is-dark">Anime.js</span>
+                              <span class="rr4-chip is-dark">Responsive</span>
+                            </div>
+                            <div class="rr4-divider"></div>
+                            <div class="rr4-meta">Menus, meters, dialogs, and data systems rendered inside a single dashboard frame.</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-5" id="control-deck">
+        <div class="container py-lg-4">
+          <div class="row g-4 align-items-stretch">
+            <div class="col-lg-5">
+              <div class="rr4-dialog h-100" data-rr4-animate>
+                <div class="rr4-section-label text-warning mb-2">*Mode: Comment</div>
+                <div class="row g-4 align-items-center">
+                  <div class="col-md-4">
+                    <div class="rr4-portrait mx-auto">
+                      <img src="./assets/images/dialog-portrait.png" alt="RR4 dialog portrait reference">
+                    </div>
+                  </div>
+                  <div class="col-md-8">
+                    <span class="rr4-panel-title mb-3">Message</span>
+                    <div class="rr4-message-box rr4-message-box-more">
+                      This pass uses the expanded toolkit set. Dialogs handle onboarding, the accordion carries structured notes,
+                      and the hero clock stays exclusive to the showcase.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-7">
+              <div class="rr4-card p-4 h-100" data-rr4-animate>
+                <div class="d-flex flex-wrap justify-content-between align-items-end gap-3 mb-4">
+                  <div>
+                    <div class="rr4-kicker mb-2">*Control Deck</div>
+                    <h2 class="h1 text-uppercase mb-0">Accordion + Meters</h2>
+                  </div>
+                  <div class="rr4-hud-row">
+                    <span class="rr4-chip">Live Layout</span>
+                    <span class="rr4-chip is-dark">Toolkit Preview</span>
+                  </div>
+                </div>
+                <div class="row g-4">
+                  <div class="col-md-6">
+                    <div class="accordion rr4-accordion" id="showcaseAccordion">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#showcase-acc-1" aria-expanded="true" aria-controls="showcase-acc-1">
+                            Garage Status
+                          </button>
+                        </h2>
+                        <div id="showcase-acc-1" class="accordion-collapse collapse show" data-bs-parent="#showcaseAccordion">
+                          <div class="accordion-body">
+                            <div class="rr4-accordion-meta mb-2">Current Loadout</div>
+                            Grip-biased setup with short gearing, tuned for high response and dense HUD-style presentation.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#showcase-acc-2" aria-expanded="false" aria-controls="showcase-acc-2">
+                            Telemetry Feed
+                          </button>
+                        </h2>
+                        <div id="showcase-acc-2" class="accordion-collapse collapse" data-bs-parent="#showcaseAccordion">
+                          <div class="accordion-body">
+                            <div class="rr4-accordion-meta mb-2">Signal Trace</div>
+                            Reveal animations now draw guide borders first, then restore the component surface as content fades in.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 d-grid gap-4">
+                    <div class="rr4-meter" style="--rr4-meter-value: 68%;">
+                      <div class="rr4-meter-head">
+                        <span class="rr4-meter-label">Turbo Load</span>
+                        <span class="rr4-meter-value">68%</span>
+                      </div>
+                      <div class="rr4-meter-track">
+                        <div class="rr4-meter-fill"></div>
+                        <div class="rr4-meter-ticks"></div>
+                      </div>
+                      <div class="rr4-meter-scale">
+                        <span>0</span>
+                        <span>25</span>
+                        <span>50</span>
+                        <span>75</span>
+                        <span>100</span>
+                      </div>
+                    </div>
+                    <div class="rr4-meter" style="--rr4-meter-value: 91%;">
+                      <div class="rr4-meter-head">
+                        <span class="rr4-meter-label">Heat Threshold</span>
+                        <span class="rr4-meter-value">91%</span>
+                      </div>
+                      <div class="rr4-meter-track">
+                        <div class="rr4-meter-fill is-danger"></div>
+                        <div class="rr4-meter-ticks"></div>
+                      </div>
+                      <div class="rr4-meter-scale">
+                        <span>idle</span>
+                        <span>mid</span>
+                        <span>high</span>
+                        <span>max</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-5" id="systems">
+        <div class="container py-lg-4">
+          <div class="d-flex flex-wrap justify-content-between align-items-end gap-3 mb-4">
+            <div>
+              <div class="rr4-kicker mb-2" data-rr4-animate>*Toolkit Systems</div>
+              <h2 class="display-5 text-uppercase mb-0" data-rr4-animate>Expanded Surface Set</h2>
+            </div>
+            <a class="rr4-btn" href="./cookbook.html" data-rr4-animate>
+              <span>View Every Recipe</span>
+              <span class="rr4-meta">Cookbook</span>
+            </a>
+          </div>
+          <div class="row g-4">
+            <div class="col-md-6 col-xl-3">
+              <article class="rr4-stat h-100" data-rr4-animate>
+                <span class="rr4-hud-caption text-warning">Navigation</span>
+                <strong>Menus</strong>
+                <p class="mb-0 text-white-50">Selectable command rows with amber markers and a flashing red current-state indicator.</p>
+              </article>
+            </div>
+            <div class="col-md-6 col-xl-3">
+              <article class="rr4-stat h-100" data-rr4-animate>
+                <span class="rr4-hud-caption text-warning">Messaging</span>
+                <strong>Dialogs</strong>
+                <p class="mb-0 text-white-50">Portrait-led comment panels, optional continuation marker, and stacked screen layouts.</p>
+              </article>
+            </div>
+            <div class="col-md-6 col-xl-3">
+              <article class="rr4-stat h-100" data-rr4-animate>
+                <span class="rr4-hud-caption text-warning">Instrumentation</span>
+                <strong>Meters</strong>
+                <p class="mb-0 text-white-50">Dashboard progress bars for stress, turbo, or system load using segmented track styling.</p>
+              </article>
+            </div>
+            <div class="col-md-6 col-xl-3">
+              <article class="rr4-stat h-100" data-rr4-animate>
+                <span class="rr4-hud-caption text-warning">Loading</span>
+                <strong style="font-size: 2.7em;">Placeholders</strong>
+                <p class="mb-0 text-white-50">Bootstrap placeholders re-skinned into RR4 cards for preloaded content and staged transitions.</p>
+              </article>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="pb-5">
+        <div class="container pb-lg-4">
+          <div class="row g-4 align-items-stretch">
+            <div class="col-lg-7">
+              <div class="rr4-card p-4 h-100" data-rr4-animate>
+                <div class="d-flex flex-wrap justify-content-between align-items-end gap-3 mb-4">
+                  <div>
+                    <div class="rr4-kicker mb-2">*Data Feed</div>
+                    <h2 class="h1 text-uppercase mb-0">Table + Pagination</h2>
+                  </div>
+                  <div class="rr4-hud-row">
+                    <span class="rr4-chip">Telemetry</span>
+                    <span class="rr4-chip is-dark">Paged View</span>
+                  </div>
+                </div>
+                <div class="table-responsive">
+                  <table class="table rr4-table">
+                    <thead>
+                      <tr>
+                        <th>Maker</th>
+                        <th>Car</th>
+                        <th>Class</th>
+                        <th>Top Speed</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Terrazi</td>
+                        <td>Wildboar</td>
+                        <td>Grip</td>
+                        <td>119 mph</td>
+                      </tr>
+                      <tr>
+                        <td>Lizard</td>
+                        <td>Assoluto</td>
+                        <td>Balance</td>
+                        <td>126 mph</td>
+                      </tr>
+                      <tr>
+                        <td>Age</td>
+                        <td>Soldat</td>
+                        <td>Power</td>
+                        <td>132 mph</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="rr4-pagination">
+                  <span class="rr4-page is-current">1</span>
+                  <span class="rr4-page">2</span>
+                  <span class="rr4-page">3</span>
+                  <span class="rr4-page">4</span>
+                  <span class="rr4-page">5</span>
+                  <span class="rr4-page">6</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <div class="rr4-demo h-100 d-flex align-items-center justify-content-center" data-rr4-animate>
+                <div class="card rr4-placeholder-card" aria-hidden="true">
+                  <img src="./assets/images/showcase-car-select.png" class="card-img-top" alt="Loading preview card">
+                  <div class="card-body">
+                    <h5 class="card-title placeholder-glow mb-3">
+                      <span class="placeholder col-7 bg-warning"></span>
+                    </h5>
+                    <p class="card-text placeholder-wave mb-4">
+                      <span class="placeholder col-10 bg-light"></span>
+                      <span class="placeholder col-8 bg-light"></span>
+                      <span class="placeholder col-9 bg-light"></span>
+                      <span class="placeholder col-6 bg-secondary"></span>
+                    </p>
+                    <a class="rr4-btn is-primary disabled placeholder col-6" aria-disabled="true"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    <footer class="rr4-footer">
+      <div class="container">
+        <div class="rr4-divider mb-3"></div>
+        <div class="d-flex flex-wrap justify-content-between gap-3">
+          <span>RR4 Frontend Toolkit Showcase</span>
+          <span>Clock kept live on showcase only</span>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js" defer></script>
+    <script src="./assets/toolkit.js" defer></script>
+  </body>
+</html>
