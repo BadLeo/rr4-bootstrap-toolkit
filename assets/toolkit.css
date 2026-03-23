@@ -514,6 +514,17 @@ a {
   box-shadow: inset -8px 0 18px rgba(0, 0, 0, 0.25);
 }
 
+.rr4-meter-fill::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  right: -1px;
+  bottom: -2px;
+  width: 3px;
+  background: #f94d4db3;
+  animation: rr4-meter-edge-flash 0.22s steps(1, end) infinite;
+}
+
 .rr4-meter-fill.is-danger {
   background:
     linear-gradient(90deg, rgba(255, 255, 255, 0.18), transparent 18%),
@@ -931,6 +942,17 @@ a {
   50%,
   100% {
     opacity: 0.2;
+  }
+}
+
+@keyframes rr4-meter-edge-flash {
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.15;
   }
 }
 
