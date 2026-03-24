@@ -852,6 +852,14 @@ a {
   text-transform: uppercase;
 }
 
+.rr4-footer-mark {
+  display: inline-block;
+  height: 1rem;
+  width: auto;
+  vertical-align: -0.1rem;
+  filter: opacity(0.5);
+}
+
 .rr4-divider {
   height: 2px;
   background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.7), transparent);
@@ -951,6 +959,7 @@ a {
 }
 
 @keyframes rr4-meter-edge-flash {
+
   0%,
   100% {
     opacity: 1;
