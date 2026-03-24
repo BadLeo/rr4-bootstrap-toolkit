@@ -191,11 +191,12 @@ a {
   display: flex;
   align-items: center;
   padding: 6rem 0 4rem;
+  overflow: hidden;
 }
 
 .rr4-speedlines {
   position: absolute;
-  inset: 14% -10% auto;
+  inset: 14% 0 auto;
   height: 180px;
   background:
     repeating-linear-gradient(90deg,
@@ -698,11 +699,18 @@ a {
 
 .rr4-table {
   margin: 0;
+  width: 100%;
   color: var(--rr4-copy);
   text-transform: uppercase;
   vertical-align: middle;
   border: 2px solid var(--rr4-line);
   background: linear-gradient(180deg, rgba(36, 36, 36, 0.96), rgba(20, 20, 20, 0.94));
+}
+
+.table-responsive {
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 
 .rr4-table th,
@@ -998,5 +1006,19 @@ a {
   .rr4-btn {
     width: 100%;
     min-width: 0;
+  }
+
+  .rr4-table {
+    font-size: 0.82rem;
+  }
+
+  .rr4-table th,
+  .rr4-table td {
+    padding: 0.65rem 0.5rem;
+  }
+
+  .rr4-table thead th {
+    white-space: normal;
+    letter-spacing: 0.08em;
   }
 }
