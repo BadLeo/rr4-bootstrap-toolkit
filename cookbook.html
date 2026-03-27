@@ -41,12 +41,25 @@
           <span class="rr4-brand-mark">RR<span style="color: red;">4</span></span>
           <span>Frontend Toolkit</span>
         </a>
-        <div class="navbar-nav ms-auto flex-row gap-3">
-          <a class="rr4-nav-link" href="./index.html">Showcase</a>
-          <a class="rr4-nav-link" href="#recipes" data-rr4-scroll>Recipes</a>
-          <a class="rr4-nav-link" href="https://github.com/BadLeo/rr4-bootstrap-toolkit" target="_blank" rel="noopener">
-            GitHub
-          </a>
+        <button
+          class="navbar-toggler border-0 shadow-none text-light p-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#rr4Nav"
+          aria-controls="rr4Nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="rr4-chip is-dark">Menu</span>
+        </button>
+        <div class="collapse navbar-collapse" id="rr4Nav">
+          <div class="navbar-nav ms-auto align-items-lg-center gap-lg-3 mt-3 mt-lg-0">
+            <a class="rr4-nav-link" href="./index.html">Showcase</a>
+            <a class="rr4-nav-link" href="#recipes" data-rr4-scroll>Recipes</a>
+            <a class="rr4-nav-link" href="https://github.com/BadLeo/rr4-bootstrap-toolkit" target="_blank" rel="noopener">
+              GitHub
+            </a>
+          </div>
         </div>
       </div>
     </nav>
